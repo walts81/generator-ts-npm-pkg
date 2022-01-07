@@ -77,7 +77,11 @@
   },
   "scripts": {
     "lint": "eslint ./generators",
-    "prepublish": "npm run lint"
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags",
+    "version-patch": "npm version patch -m \"updated version to %s\"",
+    "version-minor": "npm version minor -m \"updated version to %s\"",
+    "version-major": "npm version major -m \"updated version to %s\""
   },
   "repository": {
     "type": "git",
