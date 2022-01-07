@@ -1,0 +1,2 @@
+generators/**/*.spec.{js|ts}
+generators/**/templates/*

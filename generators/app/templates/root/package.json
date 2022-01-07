@@ -1,0 +1,37 @@
+{
+  "name": "<%= fullSlugged %>",
+  "version": "0.0.0",
+  "description": "<%= desc %>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "gulp",
+    "test": "TS_NODE_FILES=true mocha",
+    "test:cov": "gulp cleanCoverage && TS_NODE_FILES=true nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint src/**/*.ts --no-ignore",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test:cov && npm run lint",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags",
+    "version-patch": "npm version patch -m \"updated version to %s\"",
+    "version-minor": "npm version minor -m \"updated version to %s\"",
+    "version-major": "npm version major -m \"updated version to %s\""
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "Typescript",
+    "Javascript"
+  ],
+  "author": "<%= author %>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "<%= gitUrl %>"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,40 @@
+module.exports = {
+  env: {
+    node: true,
+  },
+  root: true,
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    ecmaVersion: 6,
+    requireConfigFile: false,
+    sourceType: 'module',
+  },
+  extends: ['eslint:recommended', 'prettier'],
+  rules: {
+    'array-type': 'off',
+    'arrow-parens': 'off',
+    'interface-name': 'off',
+    'max-classes-per-file': 'off',
+    'no-console': 'off',
+    'no-empty': 'off',
+    'no-extra-boolean-cast': 'off',
+    'no-namespace': 'off',
+    'no-unused-expression': 'off',
+    'object-literal-sort-keys': 'off',
+    'only-arrow-functions': 'off',
+    'ordered-imports': 'off',
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    'comma-dangle': [
+      'error',
+      {
+        objects: 'always-multiline',
+        arrays: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'never',
+      },
+    ],
+    eqeqeq: ['error', 'smart'],
+    'no-underscore-dangle': ['error', { allowAfterThis: true }],
+  },
+};
