@@ -1,6 +1,6 @@
 {
   "name": "@walts81/generator-ts-npm-pkg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a boilerplate project for creating a TypeScript npm package",
   "homepage": "https://github.com/walts81/generator-ts-npm-pkg",
   "author": {
