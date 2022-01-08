@@ -31,7 +31,7 @@ yo @walts81/ts-npm-pkg
 
 MIT © [Josh Walters]()
 
-[travis-image]: https://travis-ci.com/walts81/generator-ts-npm-pkg.svg?branch=master
-[travis-url]: https://travis-ci.com/walts81/generator-ts-npm-pkg
-[npm-image]: https://badge.fury.io/js/generator-ts-npm-pkg.svg
-[npm-url]: https://npmjs.org/package/generator-ts-npm-pkg
+[travis-image]: https://app.travis-ci.com/walts81/generator-ts-npm-pkg.svg?branch=master
+[travis-url]: https://app.travis-ci.com/walts81/generator-ts-npm-pkg
+[npm-image]: https://img.shields.io/npm/v/@walts81/generator-ts-npm-pkg.svg
+[npm-url]: https://npmjs.org/package/@walts81/generator-ts-npm-pkg
