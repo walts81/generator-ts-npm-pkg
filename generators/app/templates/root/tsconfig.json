@@ -10,7 +10,8 @@
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
     "noImplicitThis": false,
+    "allowJs": true,
     "lib": ["dom", "es2015", "es2015.promise"]
   },
-  "exclude": ["node_modules", "src/**/*.spec.ts", "lib/**/*.ts"]
+  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.spec.js", "lib/**/*.ts", "lib/**/*.js"]
 }

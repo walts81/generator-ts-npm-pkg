@@ -1,6 +1,6 @@
 # TS-NPM-PKG yo generator
 
-Generates a boilerplate project for creating a TypeScript npm package
+Generates a boilerplate project for creating a TypeScript/JavaScript npm package
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
