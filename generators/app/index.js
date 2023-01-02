@@ -60,36 +60,11 @@ module.exports = class extends Generator {
   writing() {
     this.fs.copy(this.templatePath('_devcontainer/'), this.destinationPath('.devcontainer/'));
     this.fs.copy(this.templatePath('_vscode/'), this.destinationPath('.vscode/'));
-    this.fs.copy(this.templatePath('test/'), this.destinationPath('test/'));
-    this.fs.copy(this.templatePath('dotfiles/.*'), this.destinationRoot());
     this.fs.copyTpl(this.templatePath('root/*'), this.destinationRoot(), this.props);
     this.fs.copy(this.templatePath('src/'), this.destinationPath('src/'));
   }
 
   install() {
-    this.npmInstall(
-      [
-        '@types/chai',
-        '@types/mocha',
-        '@types/node',
-        '@types/sinon',
-        '@typescript-eslint/eslint-plugin',
-        '@typescript-eslint/parser',
-        'chai',
-        'coveralls',
-        'del',
-        'eslint',
-        'eslint-config-prettier',
-        'gulp',
-        'gulp-typescript',
-        'mocha',
-        'nyc',
-        'sinon',
-        'source-map-support',
-        'ts-node',
-        'typescript',
-      ],
-      { 'save-dev': true }
-    );
+    this.npmInstall();
   }
 };
