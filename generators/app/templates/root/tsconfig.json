@@ -1,17 +1,25 @@
 {
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "sourceMap": true,
-    "outDir": "./lib/",
+    "rootDir": "./src",
+    "outDir": "./lib",
     "strict": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "declaration": true,
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
     "noImplicitThis": false,
     "allowJs": true,
-    "lib": ["dom", "es2015", "es2015.promise"]
+    "lib": ["dom", "es2015", "es2015.promise"],
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.spec.js", "lib/**/*.ts", "lib/**/*.js"]
+  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.spec.js", "lib/**/*.ts", "lib/**/*.js", "coverage"]
 }

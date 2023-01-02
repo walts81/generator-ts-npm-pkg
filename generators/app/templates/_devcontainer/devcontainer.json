@@ -27,7 +27,7 @@
   // "runArgs": [ "-u", "node" ],
 
   // Add the IDs of extensions you want installed when the container is created in the array below.
-  "extensions": ["dbaeumer.vscode-eslint", "octref.vetur", "esbenp.prettier-vscode", "eamodio.gitlens"],
+  "extensions": ["dbaeumer.vscode-eslint", "vscode-icons-team.vscode-icons", "Vue.volar", "esbenp.prettier-vscode", "eamodio.gitlens"],
   "remoteUser": "node",
   "features": {
     "docker-from-docker": "latest",

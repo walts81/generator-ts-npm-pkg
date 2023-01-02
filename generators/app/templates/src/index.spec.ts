@@ -1,10 +1,10 @@
 import { expect } from 'chai';
 import 'mocha';
-import { myFunction } from './index';
+import { getGreeting } from './index';
 
-describe('myFunction', () => {
+describe('getGreeting', () => {
   it('should return "Hello World!"', () => {
-    const result = myFunction();
+    const result = getGreeting();
     expect(result).to.eq('Hello World!');
   });
 });

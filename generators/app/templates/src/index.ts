@@ -1,3 +1,7 @@
-export const myFunction = () => {
-  return 'Hello World!';
-};
+const getGreeting = () => "Hello World!";
+
+const message = getGreeting();
+
+console.log(message);
+
+export { getGreeting, message }
